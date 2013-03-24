@@ -1,0 +1,69 @@
+FORGE
+  remote: http://forge.puppetlabs.com
+  specs:
+    example42/firewall (2.0.0)
+      example42/iptables (>= 2.0.0)
+      example42/puppi (>= 2.0.0)
+    example42/iptables (2.0.1)
+      example42/puppi (>= 2.0.0)
+    example42/monitor (2.0.0)
+      example42/puppi (>= 2.0.0)
+    example42/puppi (2.0.8)
+    puppetlabs/apt (1.1.0)
+      puppetlabs/stdlib (>= 2.2.1)
+    puppetlabs/firewall (0.2.1)
+    puppetlabs/stdlib (3.2.0)
+    puppetlabs/vcsrepo (0.1.1)
+
+GIT
+  remote: git://github.com/example42/puppet-mysql.git
+  ref: master
+  sha: 17c68708e3bce422ad7bd1b8e895c6adbb4dc098
+  specs:
+    mysql ()
+      example42/firewall (>= 2.0.0)
+      example42/monitor (>= 2.0.0)
+      example42/puppi (>= 2.0.0)
+
+GIT
+  remote: git://github.com/example42/puppet-php.git
+  ref: master
+  sha: d2e4c018bbc091f026b6e4be12feb95f7d618cbe
+  specs:
+    php ()
+      example42/puppi (>= 2.0.0)
+
+GIT
+  remote: git://github.com/example42/puppi.git
+  ref: master
+  sha: ad59a4689cf66c695b8c9df9def04d0cf2b34433
+  specs:
+    puppi ()
+
+GIT
+  remote: git://github.com/jaguerra/puppet-system.git
+  ref: master
+  sha: 7ae9b4252bad253c2d38d0f7f84ebc7423458a1b
+  specs:
+    system ()
+
+GIT
+  remote: git://github.com/puppetlabs/puppetlabs-apache.git
+  ref: master
+  sha: d552acf4a0f00d8a6ad30f21164202a6015064a9
+  specs:
+    apache ()
+      puppetlabs/firewall (>= 0.0.4)
+      puppetlabs/stdlib (>= 2.2.1)
+
+DEPENDENCIES
+  apache (>= 0)
+  mysql (>= 0)
+  php (>= 0)
+  puppetlabs/apt (>= 0)
+  puppetlabs/firewall (>= 0)
+  puppetlabs/stdlib (>= 0)
+  puppetlabs/vcsrepo (>= 0)
+  puppi (>= 0)
+  system (>= 0)
+
